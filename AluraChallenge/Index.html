@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dracula.css">
+    <title>Alura | Challenge</title>
+</head>
+
+<body>
+    <div class="background">
+        <header>
+            <div class="logologo"><img src="img/Logo.svg"></div>
+            <input type="text" class="barra-pesquisa" placeholder="Busque por algo">
+            <div class="user"><img src="./img/Photo.svg">
+                <h3>Harry</h3>
+            </div>
+
+            <div class="icones-menu">
+                <nav>
+                    <img class="icone-pesquisa" src="./img/icone-pesquisa.svg">
+                </nav>
+                <input type="checkbox" id="check">
+                <label id="icone" for="check"><img src="./img/icone-menu.svg"></label>
+            </div>
+
+                <div class="barra">
+
+                    <nav class="menu">
+                        <a href="file:///C:/Users/Tribanco/Desktop/AluraChallenge/Index.html?"><img
+                                src="./img/iconemenu.svg" class="iconemenu">
+                            <p class="link">Editor de código</p>
+                        </a>
+                        <a href="file:///C:/Users/Tribanco/Desktop/AluraChallengemobile2/Index.html"><img
+                                src="./img/iconemenu2.svg" class="iconemenu">
+                            <p class="link">Comunidade</p>
+                        </a>
+                    </nav>
+                </div>
+           
+
+        </header>
+        <main>
+            <nav class="sidebardesk">
+                <div class="sidebar">
+                    <h2 class="menu-title">Menu</h2>
+                    <div class="link"><img src="./img/iconemenu.svg">Editor de código</div>
+                    <a href="comunidade.html">
+                        <div class="link"><img src="./img/iconemenu2.svg">Comunidade</div>
+                    </a>
+                </div>
+            </nav>
+            <div class="centro">
+                <section class="retangulo" id="retangulo">
+                    <div class="cabecalho_code">
+                        <img class="botoes_code" src="./img/mac_buttons.svg">
+                        <div class="codigo-wrapper">
+                            <code class="preview hljs" contenteditable="true"
+                                aria-label="Editor de codigo">function () {}</code>
+                        </div>
+                    </div>
+                </section>
+                <div class="botao botao1">
+                    <button type="button">Visualizar com highlight</button>
+                </div>
+            </div>
+            <form class="info">
+                <fieldset class="side">
+                    <h2>seu projeto</h2>
+                    <textarea type="text" id="nomeProjeto" required placeholder="Nome do seu projeto"></textarea>
+                    <textarea type="text" id="descricaoProjeto" required
+                        placeholder="Descrição do seu projeto"></textarea>
+                </fieldset>
+                <h2>personalização</h2>
+                <fieldset class="opcoes">
+
+                    <select class="opcoesLinguagem">
+                        <option>JavaScript</option>
+                        <option>HTML</option>
+                        <option>CSS</option>
+                    </select>
+                    <div class="cordaBorda">
+                        <input type="color" id="cores" value="#6BD1FF" oninput="alterarCorBorda();">
+                    </div>
+                </fieldset>
+
+
+
+                <fieldset class="botao">
+                    <button type="submit" class="botao" id="botaosalvar">Salvar projeto</button>
+                </fieldset>
+            </form>
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
